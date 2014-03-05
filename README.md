@@ -8,6 +8,10 @@ A Grunt task for linting your php.  A simple wrapper around the `php -l <filenam
 ```javascript
 var cfg = {
 	phplint: {
+                             options: {
+                                 phpArgs: {
+                                  "-l":null,
+                                  "--difine": "shot-open-tag =Off"
 		good: ["test/rsrc/*-good.php"],
 		bad: ["test/rsrc/*-fail.php"]
 	}
